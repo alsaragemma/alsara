@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supermercados Alsara Gemma - Tu supermercado de confianza</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome para iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        alsaraRed: '#d9381e',
+                        alsaraDarkRed: '#b52c14',
+                        alsaraGreen: '#16a34a',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+<style>
+    body { font-family: 'Poppins', sans-serif; }
+</style>
+<body class="bg-gray-50 text-gray-800 flex flex-col min-h-screen">
+
+    <!-- BARRA SUPERIOR -->
+    <div class="bg-gray-900 text-gray-300 text-xs py-2 px-3">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between items-center gap-2 text-center">
+            <!-- Horarios y Teléfono en línea limpia -->
+            <div class="flex flex-wrap justify-center sm:justify-start items-center gap-x-4 gap-y-1">
+                <span><i class="fa-solid fa-clock text-alsaraRed mr-1"></i> Lunes a Sábado: 8:00 - 22:00 | Domingo: 8:00 - 15:00</span>
+                <span class="whitespace-nowrap"><i class="fa-solid fa-phone text-alsaraRed mr-1"></i> <a href="tel:603116242" class="hover:text-white font-semibold">603 11 62 42</a></span>
+            </div>
+            <!-- Redes sociales -->
+            <div class="flex items-center gap-3">
+                <span class="hidden md:inline">¡Síguenos!</span>
+                <a href="#" class="hover:text-alsaraRed transition"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#" class="hover:text-alsaraRed transition"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" class="hover:text-alsaraRed transition"><i class="fa-brands fa-whatsapp"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- CABECERA / NAVEGACIÓN -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <!-- Logo -->
+            <img src="https://i.postimg.cc/6pbDS8c5/logo-alsara-gemma-menu.png" alt="Descripción de la imagen">
+
+            <!-- Menú Escritorio -->
+            <nav class="hidden md:flex items-center gap-6 font-medium text-sm">
+                <a href="#inicio" class="text-alsaraRed font-semibold transition">Inicio</a>
+                <a href="#folleto" class="text-gray-600 hover:text-alsaraRed transition">Folleto de Ofertas</a>
+                <a href="#secciones" class="text-gray-600 hover:text-alsaraRed transition">Secciones</a>
+                <a href="#tienda" class="text-gray-600 hover:text-alsaraRed transition">Nuestra Tienda</a>
+                <a href="#contacto" class="text-gray-600 hover:text-alsaraRed transition">Contacto</a>
+            </nav>
+
+            <!-- Botón CTA Folleto -->
+            <div>
+                <a href="#folleto" class="bg-alsaraRed hover:bg-alsaraDarkRed text-white text-sm font-medium px-4 py-2 rounded-lg shadow transition flex items-center gap-2">
+                    <i class="fa-solid fa-book-open"></i> Ver Folleto
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- SECCIÓN HERO (INICIO) -->
+    <section id="inicio" class="relative bg-gradient-to-r from-red-900 to-alsaraRed text-white py-16 md:py-24">
+        <div class="container mx-auto px-4 text-center max-w-3xl">
+            <span class="bg-white/20 text-white text-xs font-semibold px-3 py-1 rounded-full uppercase tracking-wider mb-4 inline-block">
+                Tu súper de barrio
+            </span>
+            <h1 class="text-3xl md:text-5xl font-bold mb-6 leading-tight">
+                Cercanía, calidad y los mejores precios muy cerca de ti
+            </h1>
+            <p class="text-base md:text-lg text-gray-100 mb-8">
+                Disfruta de productos frescos cada día, carnicería al corte y la atención personalizada de siempre. ¡Ahorra en tu compra diaria sin salir del barrio!
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#folleto" class="bg-white text-alsaraRed hover:bg-gray-100 font-bold px-6 py-3 rounded-lg shadow transition">
+                    <i class="fa-solid fa-percent mr-2"></i> Ver Ofertas de la Semana
+                </a>
+                <a href="#contacto" class="bg-transparent border-2 border-white hover:bg-white/10 font-bold px-6 py-3 rounded-lg transition">
+                    <i class="fa-solid fa-location-dot mr-2"></i> ¿Dónde estamos?
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN VENTAJAS / PROXIMIDAD (3 columnas adaptadas) -->
+    <section class="py-8 sm:py-10 bg-white border-b px-4">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-3 gap-6 text-center max-w-5xl">
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-carrot"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Producto Fresco</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Fruta, verdura y carne seleccionadas diariamente pensando en ti.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Trato Cercano</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Nuestro equipo te ayuda y asesora como en casa.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-tags"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Ahorro Diario</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Ofertas constantes y los mejores precios en marcas de confianza.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN FOLLETO DE OFERTAS -->
+    <section id="folleto" class="py-12 sm:py-16 bg-gray-100 px-4">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-3 sm:mb-4">Folleto de Ofertas Vigentes</h2>
+            <p class="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">Descubre todos nuestros descuentos quincenales diseñados para cuidar de tu economía.</p>
+            
+            <div class="bg-white p-4 sm:p-6 rounded-xl shadow-lg border">
+                <div class="bg-gray-200 border-2 border-dashed border-gray-400 rounded-lg p-6 sm:p-10 flex flex-col items-center justify-center mb-6">
+                    <img src="https://alsara.es/wp-content/uploads/2026/09/Oferta-of12-2026-en-A4-web.jpg" />
+                </div>
+                <div class="flex flex-col sm:flex-row flex-wrap justify-center gap-3 sm:gap-4">
+                    
+                    <!-- BOTÓN DE DESCARGA DIRECTA -->
+                    <a href="https://drive.google.com/file/d/14jsQgdfJr8_hfiQsQrJzlig81j2hy0-x/view?usp=sharing" download="Folleto_Alsara.pdf" class="bg-alsaraRed hover:bg-alsaraDarkRed text-white font-medium px-5 py-3 rounded-lg shadow transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-download"></i> Descargar Folleto (PDF)
+                    </a>
+                    
+                    <!-- BOTÓN PARA VER ONLINE EN OTRA PESTAÑA -->
+                    <a href="https://drive.google.com/file/d/14jsQgdfJr8_hfiQsQrJzlig81j2hy0-x/view?usp=sharing" target="_blank" class="bg-gray-800 hover:bg-gray-700 text-white font-medium px-5 py-3 rounded-lg shadow transition flex items-center justify-center gap-2 text-sm sm:text-base">
+                        <i class="fa-solid fa-eye"></i> Ver Online en Pantalla
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN SECCIONES DE LA TIENDA -->
+    <section id="secciones" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">Nuestros Mostradores y Secciones</h2>
+                <p class="text-gray-600">Todo lo que necesitas para tu día a día organizado para ofrecerte la máxima calidad.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow border hover:shadow-md transition">
+                    <div class="bg-red-100 h-48 flex items-center justify-center text-alsaraRed text-4xl">
+                        <i class="fa-solid fa-drumstick-bite"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Carnicería y Charcutería</h3>
+                        <p class="text-gray-600 text-sm">Corte al gusto, carnes selectas de origen nacional y una gran variedad de embutidos y quesos de primera.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 2 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow border hover:shadow-md transition">
+                    <div class="bg-green-100 h-48 flex items-center justify-center text-alsaraGreen text-4xl">
+                        <i class="fa-solid fa-apple-whole"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Frutería y Verdulería</h3>
+                        <p class="text-gray-600 text-sm">Frutas y verduras frescas de temporada. Apoyamos el producto local y de proximidad para garantizar todo el sabor.</p>
+                    </div>
+                </div>
+                <!-- Tarjeta 3 -->
+                <div class="bg-gray-50 rounded-xl overflow-hidden shadow border hover:shadow-md transition">
+                    <div class="bg-amber-100 h-48 flex items-center justify-center text-amber-600 text-4xl">
+                        <i class="fa-solid fa-bread-slice"></i>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="font-bold text-xl mb-2">Panadería y Horno</h3>
+                        <p class="text-gray-600 text-sm">Pan crujiente horneado varias veces al día, bollería tierna y productos recién hechos para tus desayunos y meriendas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN VENTAJAS / PROXIMIDAD (4 columnas con Reparto a Domicilio) -->
+    <section class="py-8 sm:py-10 bg-white border-b px-4">
+        <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 text-center">
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-carrot"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Producto Fresco</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Fruta, verdura y carne seleccionadas diariamente pensando en ti.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-handshake-angle"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Trato Cercano</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Nuestro equipo te ayuda y asesora como en casa.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-tags"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Ahorro Diario</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Ofertas constantes y los mejores precios en marcas de confianza.</p>
+            </div>
+            <div class="p-4">
+                <div class="text-alsaraRed text-3xl mb-3"><i class="fa-solid fa-truck-fast"></i></div>
+                <h3 class="font-bold text-base sm:text-lg mb-1">Reparto a Domicilio</h3>
+                <p class="text-gray-500 text-xs sm:text-sm">Llevamos tu compra directamente hasta la puerta de tu casa.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCIÓN CONTACTO Y LOCALIZACIÓN -->
+    <section id="contacto" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <h2 class="text-2xl md:text-4xl font-bold mb-4">¿Dónde Encontrarnos?</h2>
+                <p class="text-gray-600">Ven a visitarnos o ponte en contacto con nosotros para cualquier consulta o encargo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+                <!-- Información y Formulario -->
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-xl border shadow-sm space-y-4">
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-alsaraRed text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Dirección</h4>
+                                <p class="text-gray-600 text-sm">Plaza San Juan de Dios  |  Vélez-Málaga, Málaga</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone text-alsaraRed text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Teléfono de la Tienda</h4>
+                                <p class="text-gray-600 text-sm"><a href="tel:603116242 class="hover:text-alsaraRed">603 11 62 42</a></p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <i class="fa-solid fa-clock text-alsaraRed text-xl mt-1"></i>
+                            <div>
+                                <h4 class="font-bold">Horario de Apertura</h4>
+                                <p class="text-gray-600 text-sm">Lunes a Sábado: 8:00 - 22:00  |  Domingo: 8:00 - 15:00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Mapa incrustado (Google Maps Mock / Real) -->
+                <div class="h-full min-h-[150px] bg-gray-200 rounded-xl overflow-hidden shadow-inner border flex flex-col">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3195.334271819484!2d-4.106848623939848!3d36.78653506846934!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd7247e092b47837%3A0x52151b4811437a1d!2sAlsara%20Express%20Gemma!5e0!3m2!1ses!2ses!4v1790446752314!5m2!1ses!2ses" 
+                        width="100%" 
+                        height="150px" 
+                        style="border:0; flex-grow:1;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Elfsight WhatsApp Chat | Untitled WhatsApp Chat -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-39c08ef6-8e47-4d06-bfd9-31de7430ddce" data-elfsight-app-lazy></div>
+
+    <!-- PIE DE PÁGINA (FOOTER) -->
+    <footer class="bg-gray-900 text-gray-400 py-10 mt-auto">
+        <div class="container mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div>
+                <div class="text-white font-bold text-xl mb-3 tracking-wider flex items-center gap-2">
+                                <img src="https://i.postimg.cc/4dhCgXyN/logo-alsara-gemma-grande-blanco-copia.png" alt="Descripción de la imagen">
+
+                </div>
+                <p class="text-sm text-gray-400">Tu supermercado de proximidad de confianza. Calidad, cercanía y buenos precios todos los días del año en tu barrio.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Enlaces Rápidos</h4>
+                <ul class="space-y-2 text-sm">
+                    <li><a href="#inicio" class="hover:text-white transition">Inicio</a></li>
+                    <li><a href="#folleto" class="hover:text-white transition">Folleto de Ofertas</a></li>
+                    <li><a href="#secciones" class="hover:text-white transition">Secciones y Frescos</a></li>
+                    <li><a href="#tienda" class="hover:text-white transition">Nuestra Tienda</a></li>
+                    <li><a href="#contacto" class="hover:text-white transition">Localización y Contacto</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-semibold mb-3 text-sm uppercase tracking-wider">Redes Sociales</h4>
+                <p class="text-sm mb-3">¡Síguenos para enterarte de todas las novedades y ofertas flash!</p>
+                <div class="flex gap-3">
+                    <a href="#" class="bg-gray-800 hover:bg-alsaraRed text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="bg-gray-800 hover:bg-alsaraRed text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="wa.me/34603116242" class="bg-gray-800 hover:bg-alsaraRed text-white w-10 h-10 rounded-full flex items-center justify-center transition"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+            <p>&copy; 2026 Supermercados Alsara Gemma. Todos los derechos reservados. | Desarrollado para comercio local.</p>
+        </div> 
+    </footer>
+
+</body>
+</html>
